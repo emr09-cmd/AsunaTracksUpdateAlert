@@ -22,7 +22,9 @@ public struct AsunaTracksUpdateAlert: View {
     public var body: some View {
         Color.clear
             .onAppear {
-                showAlert = true
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                    showAlert = true
+                }
             }
             .alert(title, isPresented: $showAlert) {
                 Button("OK") {
