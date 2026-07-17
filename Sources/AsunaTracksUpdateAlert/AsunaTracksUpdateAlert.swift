@@ -19,7 +19,7 @@ public struct AsunaTracksUpdateAlert: View {
     @State private var remoteVersion: String?
 
     public init(
-        currentVersion: String = "v0.6-alpha",
+        currentVersion: String = "v0.6.1-alpha",
         versionCheckURL: URL = URL(string: "https://raw.githubusercontent.com/emr09-cmd/AsunaTracksAppDetect/refs/heads/main/LatestVersion.AsunaTracks-emr09")!,
         releasesURL: URL = URL(string: "https://github.com/emr09-cmd/AsunaTracks/releases")!
     ) {
